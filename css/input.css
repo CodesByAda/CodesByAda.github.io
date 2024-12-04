@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .slanted-edge {
+      --p: 100px;
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--p)), 0 100%);
+    }
+  }
+  

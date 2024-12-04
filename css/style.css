@@ -1,0 +1,18 @@
+/* Styling for first section */
+* {
+    scroll-behavior: smooth;
+}
+
+.bg-gradient-text {
+    background-image: linear-gradient(to right, #6b46c1, #3b82f6); /* Gradient background from purple to blue */
+    background-clip: text;
+    -webkit-background-clip: text; /* Ensures text is clipped by background */
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hide {
+    display: none;
+}
+
+  

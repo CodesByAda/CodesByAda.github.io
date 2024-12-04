@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/PortifyLogo.png" type="image/x-icon">
+    <title>Portify - Create</title>
+</head>
+
+<body class="bg-gray-200">
+    <nav class="navbar shadow-lg bg-white">
+        <div    class="navcontents flex justify-between px-6 py-4 container m-auto">
+            <h2
+                class="navhead font-black text-2xl bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+                Portify</h2>
+            <a href="./index.html"
+                class="bg-white px-4 py-2 rounded-md font-black text-white bg-gradient-to-r from-purple-500 to-blue-500">Home</a>
+        </div>
+    </nav>
+    <section class="p-2">
+        <div class="formcnts bg-white h-[90vh] container m-auto flex max-sm:flex-col max-sm:h-full">
+            <div class="relative formbox p-4 border overflow-y-scroll w-[350px] max-sm:w-full max-sm:overflow-y-visible">
+                <!--PERSONAL INFORMATION-->
+                <div class="personalinfo">
+                    <h2
+                        class="font-black text-3xl bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+                        Personal Information</h2>
+                    <p class="text-base">Lets fill out some of your personal details</p>
+                    <hr class="my-4">
+
+                    <div class="mb-5">
+                        <label for="fname" class="block mb-2 text-sm font-medium ">First Name</label>
+                        <input type="text" id="fname"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder="John" required />
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="lname" class="block mb-2 text-sm font-medium ">Last Name</label>
+                        <input type="text" id="lname"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder="Doe" required />
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="jobtitle" class="block mb-2 text-sm font-medium ">Job Title</label>
+                        <input type="text" id="jobtitle"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder="Web Developer" required />
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="quote" class="block mb-2 text-sm font-medium ">Quote</label>
+                        <input type="text" id="quote"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder="Short and catchy.." required />
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="aboutme" class="block mb-2 text-sm font-medium ">About Me</label>
+                        <textarea id="aboutme" rows="4"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Describe yourself!"></textarea>
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="pskills" class="block mb-2 text-sm font-medium ">Skills</label>
+                        <input type="text" id="pskills"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder="Seperate skills with commas" required />
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="text-sm font-medium text-gray-900" for="user_avatar">User Avatar</label>
+                        <input
+                            class="w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 p-2.5" id="user_avatar" type="file"  accept="image/*">
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="phone" class="block mb-2 text-sm font-medium ">Phone</label>
+                        <input type="number" id="phone"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder="+91 1234 567 890" required />
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="email" class="block mb-2 text-sm font-medium ">Email</label>
+                        <input type="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder="Enter your mail id" required />
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="contactinfo" class="block mb-2 text-sm font-medium ">Contact Address</label>
+                        <textarea id="contactinfo" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your address"></textarea>
+                    </div>
+                </div>
+
+
+                <!--EDUCATION-->
+                <div class="educationalinfo">
+                    <h2
+                        class="pt-6 font-black text-3xl bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+                        Educational Qualification</h2>
+                    <p class="text-base">Add the Highest Education that you have completed or undergoing</p>
+                    <hr class="my-4">
+
+                    <div class="education mb-4">
+                        <h2 class="eduhead pt-6 text-xl font-black">Education </h2>
+                        <div class="mb-5">
+                            <label for="inst" class="block mb-2 text-sm font-medium ">Institution Name</label>
+                            <input type="text" id="inst"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                placeholder="XYZ Institution" required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="edulevel" class="block mb-2 text-sm font-medium ">Education level</label>
+                            <input type="text" id="edulevel"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                placeholder="HighSchool, College, etc.." required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="edufield" class="block mb-2 text-sm font-medium ">Education Field</label>
+                            <input type="text" id="edufield"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                placeholder="Computer Science" required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="eduyear" class="block mb-2 text-sm font-medium ">Education Timeline</label>
+                            <input type="text" id="eduyear"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                placeholder="June 2024 - present" required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="edudesc" class="block mb-2 text-sm font-medium ">Description</label>
+                            <textarea id="edudesc" rows="4"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Describe your educational experience"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--PROJECTS-->
+                <div class="projects">
+                    <h2
+                        class="pt-6 font-black text-3xl bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+                        Projects</h2>
+                    <p class="text-base">Add your best three projects.<br>Click the checkbox if you don't have any projects</p>
+                    <hr class="my-4">
+
+                    <div class="flex items-center mb-4">
+                        <input type="checkbox" value="" id="projcheck"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500    ">
+                        <label for="projcheck" class="ms-2 text-sm font-medium text-black">I don't have any
+                            projects</label>
+                    </div>
+
+                    <div class="projsec" id="projsec">
+                        <!--PROJECT 1-->
+                        <div class="project1">
+                            <h2 class="font-black mb-3">Project 1</h2>
+                            <div class="mb-5">
+                                <label for="pname1" class="block mb-2 text-sm font-medium ">Project Name</label>
+                                <input type="text" id="pname1"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                    placeholder="Name of the project" required />
+                            </div>
+
+                            <div class="mb-5">
+                                <label for="pabout1" class="block mb-2 text-sm font-medium ">About Project</label>
+                                <textarea id="pabout1" rows="4"
+                                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="A short description of what the project is about"></textarea>
+                            </div>
+
+                            <div class="mb-5">
+                                <label for="gitlink1" class="block mb-2 text-sm font-medium ">Github Link</label>
+                                <input type="text" id="gitlink1"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                    placeholder="Link to project repository" required />
+                            </div>
+
+                        </div>
+
+                        <!--PROJECT2-->
+                        <div class="project2">
+                            <hr>
+                            <h2 class="font-black my-5 ">Project 2</h2>
+                            <div class="mb-5">
+                                <label for="pname2" class="block mb-2 text-sm font-medium ">Project Name</label>
+                                <input type="text" id="pname2"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                    placeholder="Name of the project" required />
+                            </div>
+
+                            <div class="mb-5">
+                                <label for="pabout2" class="block mb-2 text-sm font-medium ">About Project</label>
+                                <textarea id="pabout2" rows="4"
+                                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="A short description of what the project is about"></textarea>
+                            </div>
+
+                            <div class="mb-5">
+                                <label for="gitlink2" class="block mb-2 text-sm font-medium ">Github Link</label>
+                                <input type="text" id="gitlink2"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                    placeholder="Link to project repository" required />
+                            </div>
+                        </div>
+
+                        <!--PROJECT 3-->
+                        <div class="project3">
+                            <hr>
+                            <h2 class="font-black my-5 ">Project 3</h2>
+                            <div class="mb-5">
+                                <label for="pname3" class="block mb-2 text-sm font-medium ">Project Name</label>
+                                <input type="text" id="pname3"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                    placeholder="Name of the project" required />
+                            </div>
+
+                            <div class="mb-5">
+                                <label for="pabout3" class="block mb-2 text-sm font-medium ">About Project</label>
+                                <textarea id="pabout3" rows="4"
+                                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="A short description of what the project is about"></textarea>
+                            </div>
+
+                            <div class="mb-5">
+                                <label for="gitlink3" class="block mb-2 text-sm font-medium ">Github Link</label>
+                                <input type="text" id="gitlink3"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                    placeholder="Link to project repository" required />
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="experience">
+                    <h2
+                        class="font-black text-3xl bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent pt-4">
+                        Experience</h2>
+                    <p class="text-base">Add your work experience.<br>Click the checkbox if you don"t have any experience.</p>
+                    <hr class="my-4">
+
+                    <div class="flex items-center mb-4">
+                        <input type="checkbox" value="" id="expcheck"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500    ">
+                        <label for="expcheck" class="ms-2 text-sm font-medium text-black">I don't have any
+                            Experience.</label>
+                    </div>
+
+                    <div class="exp1 mb-4" id="exp1">
+                        <h2 class="exphead pt-6 text-xl font-black">Experience </h2>
+                        <div class="mb-5">
+                            <label for="comp" class="block mb-2 text-sm font-medium ">Company Name</label>
+                            <input type="text" id="comp1"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                placeholder="XYZ Company" required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="exprole" class="block mb-2 text-sm font-medium ">Role</label>
+                            <input type="text" id="exprole1"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                placeholder="Your role in the company" required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="expyear" class="block mb-2 text-sm font-medium ">Experience Timeline</label>
+                            <input type="text" id="expyear"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                placeholder="June 2024 - present" required />
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="expdesc" class="block mb-2 text-sm font-medium ">Description</label>
+                            <textarea id="expdesc1" rows="4"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Describe your Experience working here"></textarea>
+                        </div>
+                    </div>
+
+
+                </div>
+                <a href="./portfolio.html" class="bg-white px-4 mt-4 py-2 rounded-md w-full font-semibold text-white bg-gradient-to-r from-purple-500 to-blue-500">Visit and download</a>
+
+                <button id="submitBtn"
+                    class="bg-white px-4 mt-4 py-2 rounded-md w-full font-semibold text-white bg-gradient-to-r from-purple-500 to-blue-500 sticky bottom-0 left-0" href="#preview">Save</button>
+
+            </div>
+            <div class="preview flex-1 max-sm:h-auto">
+                <iframe id="portfolioIframe" src="./portfolio.html" frameborder="0"
+                    class="w-full h-full max-sm:h-[100vh]"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="./scripts/formValidation.js"></script>
+</body>
+
+</html>

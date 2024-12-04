@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/PortifyLogo.png" type="image/x-icon">
+</head>
+
+<body class="font-sans bg-gray-50 relative">
+    <a id="downloadBtn"
+        class="bg-gradient-to-r from-blue-500 to-purple-600 h-20 w-20 fixed bottom-4 right-4 z-10 flex items-center justify-center text-white text-xl font-bold rounded-full hover:cursor-pointer">⬇️</a>
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-gradient-to-r from-blue-500 to-purple-600 z-10 px-6 py-4 shadow-md">
+        <div class="flex items-center justify-between max-w-screen-xl mx-auto">
+            <a href="#" class="text-2xl text-white font-semibold"><span id="firstnametag">John</span>'s Portfolio</a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#about" class="text-white hover:text-gray-300">About</a>
+                <a href="#projects" class="text-white hover:text-gray-300" id="projNav">Projects</a>
+                <a href="#experience" class="text-white hover:text-gray-300" id="expNav">Experience</a>
+                <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="relative pt-36 pb-24 bg-gradient-to-r from-blue-500 to-purple-600 text-white flex items-center justify-center text-center">
+        <div class="relative">
+            <!-- User Picture -->
+            <img src="https://picsum.photos/200/300?random=1" alt="User Picture"
+                class="w-56 h-56 rounded-full mx-auto border-4 border-white mb-6" id="profilepic">
+
+            <!-- Texts and Button -->
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Hi, I'm <span id="fullnametag" class="text-black"> John Doe
+                </span><br>I'm a <span id="jobtitletag">Software Developer</span></h1>
+            <p class="text-lg sm:text-xl mb-6" id="quotetag">Building innovative solutions with code.</p>
+
+            <!-- Button -->
+            <a href="#projects" id="viewProjBtn"
+                class="bg-white text-black px-6 py-3 mt-6 rounded-full text-lg hover:bg-gray-200">View
+                My Work</a>
+        </div>
+    </section>
+
+
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-gray-100 text-center px-6 sm:px-16">
+        <h2 class="text-4xl font-bold mb-4">About Me</h2>
+        <p class="text-lg sm:text-xl max-w-2xl mx-auto mb-8" id="abouttag">
+            I am a passionate software developer with expertise in
+            building modern web applications. I enjoy solving complex problems and creating impactful solutions.
+        </p>
+
+        <div class="text-lg sm:text-xl text-gray-700">
+            <p><strong>Skills:</strong><span id="skillstag">React, Node.js, JavaScript, HTML, CSS, Tailwind CSS,
+                    Express</span></p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 text-center px-6 sm:px-16">
+        <h2 class="text-4xl font-bold mb-4">My Projects</h2>
+        <p class="text-lg sm:text-xl mb-8">Here are a few projects I've worked on.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg" id="projImg1tag"
+                    alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-semibold mb-2" id="projName1tag">Awesome Project</h3>
+                <p class="text-gray-700 mb-4" id="projDesc1tag">This is my awesome project</p>
+                <a href="https://github.com" id="githubLink1tag" class="text-blue-500 hover:text-blue-700">View on
+                    GitHub</a>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg" alt="Project 2"
+                    id="projImg2tag" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-semibold mb-2" id="projName2tag">Awesome Project</h3>
+                <p class="text-gray-700 mb-4" id="projDesc2tag">This is my awesome project</p>
+                <a href="https://github.com" id="githubLink2tag" class="text-blue-500 hover:text-blue-700">View on
+                    GitHub</a>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <img src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg" id="projImg3tag"
+                    alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-semibold mb-2" id="projName3tag">Awesome Project</h3>
+                <p class="text-gray-700 mb-4" id="projDesc3tag">This is my awesome project</p>
+                <a href="https://github.com" id="githubLink3tag" class="text-blue-500 hover:text-blue-700">View on
+                    GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-200 text-center px-6 sm:px-16">
+        <h2 class="text-4xl font-bold mb-4">Experience</h2>
+        <div class="max-w-4xl mx-auto">
+            <div class="border-t border-gray-400 py-4">
+                <h3 class="text-2xl font-semibold mb-2"><span id="exproletag">Software Developer</span> - <span
+                        class="compNametag" id="compNametag">XYZ Company</span></h3>
+                <p class="text-gray-700" id="expdatetag">June 2022 - Present</p>
+                <p class="text-center mt-4" id="expdesctag">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis exercitationem consectetur itaque
+                    voluptatibus quo, architecto quasi possimus inventore obcaecati voluptas, veniam neque odit. Ratione
+                    perferendis at illum hic veritatis libero.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white text-center px-6 sm:px-16"> <!-- Changed id to education -->
+        <h2 class="text-4xl font-bold mb-4">Educational Qualification</h2>
+        <div class="max-w-4xl mx-auto">
+            <div class="border-t border-gray-400 py-4">
+                <h3 class="text-2xl font-semibold mb-2"> <span id="eduFieldtag">BTech - CSE</span> , <span
+                        class="institution" id="instnametag">XYZ Institution</span></h3>
+                <p class="text-gray-900" id="edulvltag">Engineering Degree</p>
+                <p class="text-gray-700" id="edudatetag">June 2022 - Present</p>
+                <p class="text-center mt-4" id="eduDesctag">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis exercitationem consectetur itaque
+                    voluptatibus quo, architecto quasi possimus inventore obcaecati voluptas, veniam neque odit. Ratione
+                    perferendis at illum hic veritatis libero.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-200 text-center px-6 sm:px-16">
+        <h2 class="text-4xl font-bold mb-4">Contact Me</h2>
+        <p class="text-lg sm:text-xl mb-8">Feel free to reach out if you'd like to connect or work together!</p>
+        <div class="addressbox">
+            <p class="font-bold">Name: <span id="contactName" class="font-light">John Doe</span></p>
+            <p class="font-bold">Email: <span id="email" class="font-light">JohnDoe@gmail.com</span></p>
+            <p class="font-bold">Phone: <span id="phone" class="font-light">John Doe</span></p>
+            <p class="font-bold">Address: <span id="message" class="font-light">John Doe, Xyz street</span></p>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-8 bg-gray-800 text-white text-center">
+        <p>© 2024 <span id="footername">JohnDoe</span>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./scripts/recoverValues.js"></script>
+    <script>
+        // Function to download the entire HTML content of the page
+        let downloadBtn = document.getElementById("downloadBtn")
+        downloadBtn.addEventListener("click", async () => {
+            downloadBtn.classList.add("hidden")
+            // Capture the entire HTML content of the page
+            const pageContent = document.documentElement.outerHTML;
+
+            // Create a Blob from the HTML content
+            const blob = new Blob([pageContent], { type: "text/html" });
+
+            // Create a link element to trigger the download
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "http://127.0.0.1:5500/portfolio.html"; // Name of the file to download
+
+            // Trigger the download
+            document.body.appendChild(link);
+            link.click();
+
+            // Cleanup
+            document.body.removeChild(link);
+            URL.revokeObjectURL(link.href);
+        });
+    </script>
+</body>
+
+</html>
